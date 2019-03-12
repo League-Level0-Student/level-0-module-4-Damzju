@@ -21,9 +21,9 @@ public class DontForgetTheLyrics {
 	
 	public static void main(String[] args) {
 		// 4. Make a pop-up to explain the game.
-
+		String lyric = JOptionPane.showMessageDialog(null, "Play the lyric game nub.");
 		// 5. Use the playSound method to play your song.
-
+		
 		// 6. Make a pop-up for the player to type their answer.
 
 		// 7. If they answered correctly, tell them that they were right.
