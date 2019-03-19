@@ -18,6 +18,7 @@ public class FruitQuiz extends KeyAdapter {
 				"<html>Which is not a real fruit? <br> A: Dragon Fruit <br> B: Durian <br> C: Crazyberry</html>");
 		// 11. Make another question called "question2". Use question1 above as a guide.
 		question2 = new JLabel("<html>What is 25 x 5? <br> A: 625 <br> B: 125 <br> C: 150</html>");
+		question3 = new JLabel("<html>It is me the frenchiest friii?</ccchtml>");
 	}
 
 	@Override
@@ -50,9 +51,19 @@ public class FruitQuiz extends KeyAdapter {
 				incorrect();
 			}
 			if (question2.isShowing()) {
-				if (keyCode == B)
+				if (keyCode == B) {
 					correct();
-				nextQuestion(question3);
+					nextQuestion(question3);
+				}
+			} else {
+				incorrect();
+			}
+			
+			if (question3.isShowing()) {
+				if (keyCode == A) {
+					correct();
+					nextQuestion(question4);
+				}
 			} else {
 				incorrect();
 			}
